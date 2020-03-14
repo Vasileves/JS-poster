@@ -1,0 +1,24 @@
+body {
+  background-color: blue;
+}
+
+.badtxt {
+  display: block;
+  position: absolute;
+}
+
+.s {
+  transform: scale(0.6);
+}
+
+.m {
+  transform: scale(0.87);
+}
+
+.l {
+  transform: scale(1.2);
+}
+
+svg {
+  background-color: red;
+}
