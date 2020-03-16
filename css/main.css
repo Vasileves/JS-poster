@@ -1,24 +1,52 @@
+@font-face {
+    font-family: "inter";
+    src: url('inter.ttf');
+    src: url('inter.ttf'); /* IE9 Compat Modes */
+    src: url('inter.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('inter.ttf') format('truetype'), /* Super Modern Browsers */
+}
+
 body {
   background-color: blue;
+  height: 300vh;
 }
 
 .badtxt {
   display: block;
   position: absolute;
+  transform-origin: center;
 }
 
-.s {
-  transform: scale(0.6);
+
+.badtxtjustify {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+  margin-top: 50vh;
+  display: flex;
+  align-items: center;
 }
 
-.m {
-  transform: scale(0.87);
+.stxt1 {
+font-family: 'inter', sans-serif;
+font-size: 28pt;
+font-variation-settings: 'wght' 500;
+letter-spacing: 4.0px;
 }
 
-.l {
-  transform: scale(1.2);
+.mtxt1 {
+font-family: 'inter', sans-serif;
+font-size: 28pt;
+font-variation-settings: 'wght' 300;
+letter-spacing: 4.0px;
 }
 
-svg {
-  background-color: red;
+.ltxt1 {
+font-family: 'inter', sans-serif;
+font-size: 28pt;
+font-variation-settings: 'wght' 100;
+letter-spacing: 4.0px;
 }
