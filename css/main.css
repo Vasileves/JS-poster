@@ -43,12 +43,6 @@ body {
   mask-position: center;
   background-color: #fff;
 }
-/*
-#boshka{
-  transform: translateY(-50%);
-  margin-top: 50vh;
-  align-items: center;
-} */
 
 .darkwave {
   will-change: transform;
@@ -58,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   transform: translateY(-50%);
-  margin-top: 106vh;
+  margin-top: 1020px;
   display: flex;
   align-items: center;
   animation: wdark 1s linear infinite;
@@ -72,7 +66,7 @@ body {
   display: flex;
   justify-content: center;
   transform: translateY(-50%);
-  margin-top: 97vh;
+  margin-top: 950px;
   display: flex;
   align-items: center;
   animation: wlight 2s linear infinite;
