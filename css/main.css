@@ -31,7 +31,24 @@ body {
 }
 
 
+
+#ii{
+  position:fixed;
+  width:100vw;
+  height: 100vh;
+  -webkit-clip-path: url(#boshka);
+  clip-path: url(#boshka);
+  background-color: #fff;
+}
+
+#boshka{
+  transform: translateY(-50%);
+  margin-top: 50vh;
+  align-items: center;
+}
+
 .darkwave {
+  will-change: transform;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -45,6 +62,7 @@ body {
 }
 
 .lightwave {
+  will-change: transform;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -58,6 +76,7 @@ body {
 }
 
 .stxt1 {
+will-change: transform;
 font-family: 'inter', sans-serif;
 font-size: 28pt;
 font-variation-settings: 'wght' 500;
@@ -69,6 +88,7 @@ letter-spacing: 10.6px;
 /* 500 300 100 */
 
 .mtxt1 {
+will-change: transform;
 font-family: 'inter', sans-serif;
 font-size: 28pt;
 font-variation-settings: 'wght' 300;
@@ -78,6 +98,7 @@ letter-spacing: 15.5px;
 }
 
 .ltxt1 {
+will-change: transform;
 font-family: 'inter', sans-serif;
 font-size: 28pt;
 font-variation-settings: 'wght' 100;
