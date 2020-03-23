@@ -39,6 +39,7 @@ body {
   -webkit-mask: url(https://vasileves.github.io/JS-poster/res/boshka.svg);
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 200px;
   mask-position: center;
   background-color: #fff;
 }
