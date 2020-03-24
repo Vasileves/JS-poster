@@ -17,6 +17,9 @@ body {
   transform-origin: center;
 }
 
+.s {
+  transform: translate(-50%,-50%);
+}
 
 .badtxtjustify {
   position: fixed;
@@ -40,7 +43,10 @@ body {
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 200px;
+  mask: url(https://vasileves.github.io/JS-poster/res/boshka.svg);
   mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 200px;
   background-color: #fff;
 }
 
@@ -52,7 +58,7 @@ body {
   display: flex;
   justify-content: center;
   transform: translateY(-50%);
-  margin-top: 1020px;
+  margin-top: 95vh;
   display: flex;
   align-items: center;
   animation: wdark 1s linear infinite;
@@ -66,7 +72,7 @@ body {
   display: flex;
   justify-content: center;
   transform: translateY(-50%);
-  margin-top: 950px;
+  margin-top: 88vh;
   display: flex;
   align-items: center;
   animation: wlight 2s linear infinite;
@@ -78,8 +84,22 @@ font-family: 'inter', sans-serif;
 font-size: 28pt;
 font-variation-settings: 'wght' 500;
 letter-spacing: 10.6px;
-/* letter-spacing: 4.3px; */
-/* animation: txt1 2s ease-in-out infinite; */
+}
+
+.stxt2 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 28pt;
+font-variation-settings: 'wght' 500;
+letter-spacing: 17.4px;
+}
+
+.stxt3 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 28pt;
+font-variation-settings: 'wght' 500;
+letter-spacing: 9.4px;
 }
 
 /* 500 300 100 */
@@ -89,7 +109,7 @@ will-change: transform;
 font-family: 'inter', sans-serif;
 font-size: 28pt;
 font-variation-settings: 'wght' 300;
-letter-spacing: 15.5px;
+letter-spacing: 20.4px;
 /* letter-spacing: 5px; */
 /* animation: txt2 2s ease-in-out infinite; */
 }
