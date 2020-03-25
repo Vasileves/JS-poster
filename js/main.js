@@ -13,7 +13,7 @@ const partconf =
 {
   "particles": {
     "number": {
-      "value": 72,
+      "value": 55,
       "density": {
         "enable": true,
         "value_area": 800
@@ -134,7 +134,7 @@ particlesJS('particles', partconf)
 var upd = 1
 
 var scroll = function () {
-	if (window.scrollY < window.innerHeight * 5) {
+	if (window.scrollY < window.innerHeight * 3) {
 		if (upd != 1) {
       //s
 			document.getElementById('stext').innerHTML=('<svg class="badtxt cfix" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt1" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО</textPath></svg>')
@@ -146,7 +146,7 @@ var scroll = function () {
 		}
 	}
 
-	else  if (window.scrollY > window.innerHeight * 5 && window.scrollY < window.innerHeight * 10)  {
+	else  if (window.scrollY > window.innerHeight * 3 && window.scrollY < window.innerHeight * 8)  {
 		if (upd != 2) {
         //s
 				document.getElementById('stext').innerHTML=('<svg class="badtxt cfix" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt2" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ВСЁ НЕ ТАК ПЛОХО ВСЁ НЕ ТАК ПЛОХО</textPath></svg>')
@@ -158,7 +158,7 @@ var scroll = function () {
 			}
 		}
 
-		else  if (window.scrollY > window.innerHeight * 10 && window.scrollY < window.innerHeight * 15)  {
+		else  if (window.scrollY > window.innerHeight * 7 && window.scrollY < window.innerHeight * 13)  {
 			if (upd != 3) {
           //s
 					document.getElementById('stext').innerHTML=('<svg class="badtxt cfix" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt3" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ</textPath></svg>')
@@ -169,7 +169,7 @@ var scroll = function () {
           upd = 3
 				}
 		}
-    else  if (window.scrollY > window.innerHeight * 15 && window.scrollY < window.innerHeight * 20)  {
+    else  if (window.scrollY > window.innerHeight * 13 && window.scrollY < window.innerHeight * 20)  {
       if (upd !=4) {
           //s
           document.getElementById('stext').innerHTML=('<svg class="badtxt cfix" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt4" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ПРЕКРАСНО ПРЕКРАСНО</textPath></svg>')

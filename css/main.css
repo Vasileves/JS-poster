@@ -177,12 +177,16 @@ font-variation-settings: 'wght' 100;
 letter-spacing: 60px;
 }
 
-.bgend{
+.bgend {
   pointer-events: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #green;
+  background-color: #fff;
+}
+
+.logo {
+  transform: scale(1.5,1.5)
 }
 
 #particles {
