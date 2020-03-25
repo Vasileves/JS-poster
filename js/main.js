@@ -48,7 +48,7 @@ const partconf =
       }
     },
     "size": {
-      "value": 5,
+      "value": 4,
       "random": true,
       "anim": {
         "enable": false,
@@ -111,7 +111,7 @@ const partconf =
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 10
       },
       "remove": {
         "particles_nb": 2
