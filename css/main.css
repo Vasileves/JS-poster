@@ -178,9 +178,14 @@ letter-spacing: 60px;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: #green;
 }
 
+#particles {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
 /*
  @keyframes txt1 {
 	75% {
