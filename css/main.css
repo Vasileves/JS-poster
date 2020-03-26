@@ -37,7 +37,6 @@ body {
 }
 
 
-
 #ii{
   pointer-events: all;
   position:fixed;
@@ -53,7 +52,12 @@ body {
   mask-size: 22vh;
   background-color: #fff;
 }
-
+$type: line;
+p { @if (vh > vw) {
+  #li {
+      mask-size: 22vw;
+  }
+}}
 
 .darkwave {
   display: flex;
