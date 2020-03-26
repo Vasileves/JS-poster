@@ -45,19 +45,20 @@ body {
   -webkit-mask: url(https://vasileves.github.io/JS-poster/res/boshka.svg);
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 22vh;
+  -webkit-mask-size: 20vh;
   mask: url(https://vasileves.github.io/JS-poster/res/boshka.svg);
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-size: 22vh;
+  mask-size: 20vh;
   background-color: #fff;
 }
-$type: line;
-p { @if (vh > vw) {
-  #li {
-      mask-size: 22vw;
+
+@media screen and (max-width: 1020px) {
+  #ii{
+      mask-size: 19vw;
+      -webkit-mask-size: 19vw;
   }
-}}
+}
 
 .darkwave {
   display: flex;

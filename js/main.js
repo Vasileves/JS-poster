@@ -7,7 +7,7 @@
 // SCROLL TEXTPATH RESOLUTION CHECK
 ///////////////////////////////////
 
-if (window.innerWidth > 1024) {
+if (window.innerWidth > 1023) {
 	smallTpath = 'width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/>'
 	mediumTpath = 'width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,310a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/>'
 	largeTpath = 'width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,394a394,394 0 1,0 788,0a394,394 0 1,0 -788,0"/>'
