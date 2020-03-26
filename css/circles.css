@@ -1,3 +1,106 @@
+@media screen and (max-width: 646px) {
+.stxt1 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 15.4pt;
+font-variation-settings: 'wght' 800;
+letter-spacing: 10.3px;
+}
+
+.mtxt1 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 15.4pt;
+font-variation-settings: 'wght' 600;
+letter-spacing: 19.4px;
+}
+
+.ltxt1 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 15.4pt;
+font-variation-settings: 'wght' 400;
+letter-spacing: 28px;
+}
+
+.stxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 600;
+  letter-spacing: 8.6px;
+}
+
+
+.mtxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 350;
+  letter-spacing: 19.4px;
+}
+
+.ltxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 28.4px;
+}
+
+.stxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 400;
+  letter-spacing: 10.3px;
+}
+
+.mtxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 300;
+  letter-spacing: 22.3px;
+}
+
+.ltxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 33px;
+}
+
+.stxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 200;
+  letter-spacing: 22px;
+}
+
+.mtxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 200;
+  letter-spacing: 22.4px;
+}
+
+.ltxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 15.4pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 33.3px;
+}
+}
+
+
+
+
+@media screen and (min-width: 647px) {
 .stxt1 {
 will-change: transform;
 font-family: 'inter', sans-serif;
@@ -94,7 +197,7 @@ letter-spacing: 21px;
   font-variation-settings: 'wght' 100;
   letter-spacing: 45px;
 }
-
+}
 
 
 

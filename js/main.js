@@ -12,11 +12,15 @@ if (window.innerWidth > 1023) {
 	mediumTpath = 'width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,310a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/>'
 	largeTpath = 'width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,394a394,394 0 1,0 788,0a394,394 0 1,0 -788,0"/>'
 }
-
-else {
+else if (window.innerWidth > 646){
 	smallTpath = 'width="302" height="302" viewBox="0 0 302 302" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st0" d="M0,151a151,151 0 1,0 302,0a151,151 0 1,0 -302,0"/>'
 	mediumTpath = 'width="450" height="450" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,225a225,225 0 1,0 450,0a225,225 0 1,0 -450,0"/>'
 	largeTpath = 'width="578" height="578" viewBox="0 0 578 578" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,289a289,289 0 1,0 578,0a289,289 0 1,0 -578,0"/>'
+}
+else {
+	smallTpath = 'width="226" height="226" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st0" d="M0,113a113,113 0 1,0 226,0a113,113 0 1,0 -226,0"/>'
+	mediumTpath = 'width="338" height="338" viewBox="0 0 338 338" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1"  d="M0,169a169,169 0 1,0 338,0a169,169 0 1,0 -338,0"/>'
+	largeTpath = 'width="434" height="434" viewBox="0 0 434 434" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,217a217,217 0 1,0 434,0a217,217 0 1,0 -434,0"/>'
 }
 
 
@@ -278,7 +282,7 @@ jQuery(function( $ ){
     $(window).scroll(function() {
         var yPos = ( $(window).scrollTop() );
 
-        if(yPos > window.innerHeight * 16) { // Show element after this amount of scrolled down pixels
+        if(yPos > window.innerHeight * 17.5) { // Show element after this amount of scrolled down pixels
 
 			$(".bgend").fadeIn();
 		} else {
@@ -291,7 +295,7 @@ jQuery(function( $ ){
     $(window).scroll(function() {
         var yPos = ( $(window).scrollTop() );
 
-        if(yPos > window.innerHeight * 17) { // Show element after this amount of scrolled down pixels
+        if(yPos > window.innerHeight * 18) { // Show element after this amount of scrolled down pixels
 
 			$(".logo").fadeIn();
 		} else {
