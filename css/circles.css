@@ -1,0 +1,199 @@
+.stxt1 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 19pt;
+font-variation-settings: 'wght' 800;
+letter-spacing: 15.6px;
+}
+
+.mtxt1 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 19pt;
+font-variation-settings: 'wght' 600;
+letter-spacing: 12.4px;
+}
+
+.ltxt1 {
+will-change: transform;
+font-family: 'inter', sans-serif;
+font-size: 19pt;
+font-variation-settings: 'wght' 400;
+letter-spacing: 21px;
+}
+
+.stxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 600;
+  letter-spacing: 12.4px;
+}
+
+
+.mtxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 350;
+  letter-spacing: 26.4px;
+}
+
+.ltxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 39px;
+}
+
+.stxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 400;
+  letter-spacing: 15.3px;
+}
+
+.mtxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 300;
+  letter-spacing: 31.3px;
+}
+
+.ltxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 45px;
+}
+
+.stxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 200;
+  letter-spacing: 32px;
+}
+
+.mtxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 200;
+  letter-spacing: 31px;
+}
+
+.ltxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 19pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 45px;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .stxt1 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 800;
+  letter-spacing: 21.6px;
+  }
+
+  .stxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 600;
+  letter-spacing: 17.4px;
+  }
+
+  .stxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 400;
+  letter-spacing: 21px;
+  }
+
+  .stxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 200;
+  letter-spacing: 44px;
+  }
+
+  /* 500 300 100 */
+
+  .mtxt1 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 450;
+  letter-spacing: 20.4px;
+  }
+
+  .mtxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 350;
+  letter-spacing: 35.4px;
+  }
+
+  .mtxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 300;
+  letter-spacing: 41px;
+  }
+
+  .mtxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 200;
+  letter-spacing: 42px;
+  }
+
+  .ltxt1 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 300;
+  letter-spacing: 31px;
+  }
+
+  .ltxt2 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 52px;
+  }
+
+  .ltxt3 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 60px;
+  }
+
+  .ltxt4 {
+  will-change: transform;
+  font-family: 'inter', sans-serif;
+  font-size: 28pt;
+  font-variation-settings: 'wght' 100;
+  letter-spacing: 60px;
+  }
+}

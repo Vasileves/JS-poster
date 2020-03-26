@@ -134,7 +134,20 @@ const partconf =
 
 
 
-// SCROLL
+// SCROLL TEXTPATH RESOLUTION CHECK
+
+if (window.innerWidth > 1024) {
+	smallTpath = 'width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/>'
+	mediumTpath = 'width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,310a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/>'
+	largeTpath = 'width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,394a394,394 0 1,0 788,0a394,394 0 1,0 -788,0"/>'
+}
+
+else {
+	smallTpath = 'width="302" height="302" viewBox="0 0 302 302" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st0" d="M0,151a151,151 0 1,0 302,0a151,151 0 1,0 -302,0"/>'
+	mediumTpath = 'width="450" height="450" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,225a225,225 0 1,0 450,0a225,225 0 1,0 -450,0"/>'
+	largeTpath = 'width="578" height="578" viewBox="0 0 578 578" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,289a289,289 0 1,0 578,0a289,289 0 1,0 -578,0"/>'
+}
+
 
 
 var upd = 1
@@ -143,11 +156,11 @@ var scroll = function () {
 	if (window.scrollY < window.innerHeight * 3) {
 		if (upd != 1) {
       //s
-			document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt1" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО</textPath></svg>')
+			document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + smallTpath + ' <text class ="stxt1" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО</textPath></svg>')
       //m
-      document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,310a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/><text class ="mtxt1" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО</textPath></svg>')
+      document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" '+ mediumTpath +' <text class ="mtxt1" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО</textPath></svg>')
       //l
-      document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,394a394,394 0 1,0 788,0a394,394 0 1,0 -788,0"/><text class ="ltxt1" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО  ВСЁ ПЛОХО ВСЁ ПЛОХО  ВСЁ ПЛОХО ВСЁ ПЛОХО  ВСЁ ПЛОХО</textPath></svg>')
+      document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" '+ largeTpath +'<text class ="ltxt1" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО ВСЁ ПЛОХО  ВСЁ ПЛОХО ВСЁ ПЛОХО  ВСЁ ПЛОХО ВСЁ ПЛОХО  ВСЁ ПЛОХО</textPath></svg>')
       upd = 1
 		}
 	}
@@ -155,11 +168,11 @@ var scroll = function () {
 	else  if (window.scrollY > window.innerHeight * 3 && window.scrollY < window.innerHeight * 8)  {
 		if (upd != 2) {
         //s
-				document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt2" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ВСЁ НЕ ТАК ПЛОХО ВСЁ НЕ ТАК ПЛОХО</textPath></svg>')
+				document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + smallTpath + ' <text class ="stxt2" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ВСЁ НЕ ТАК ПЛОХО ВСЁ НЕ ТАК ПЛОХО</textPath></svg>')
         //m
-        document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,310a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/><text class ="mtxt2" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">ВСЁ НЕ ТАК ПЛОХО ВСЁ НЕ ТАК ПЛОХО</textPath></svg>')
+        document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" ' +	mediumTpath + ' <text class ="mtxt2" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">ВСЁ НЕ ТАК ПЛОХО ВСЁ НЕ ТАК ПЛОХО</textPath></svg>')
         //l
-        document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,394a394,394 0 1,0 788,0a394,394 0 1,0 -788,0"/><text class ="ltxt2" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">ВСЁ НЕ ТАК ПЛОХО ВСЁ НЕ ТАК ПЛОХО</textPath></svg>')
+        document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + largeTpath + ' <text class ="ltxt2" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">ВСЁ НЕ ТАК ПЛОХО ВСЁ НЕ ТАК ПЛОХО</textPath></svg>')
         upd = 2
 			}
 		}
@@ -167,22 +180,22 @@ var scroll = function () {
 		else  if (window.scrollY > window.innerHeight * 8 && window.scrollY < window.innerHeight * 13)  {
 			if (upd != 3) {
           //s
-					document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt3" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ</textPath></svg>')
+					document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + smallTpath + ' <text class ="stxt3" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ</textPath></svg>')
           //m
-          document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,310a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/><text class ="mtxt3" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ</textPath></svg>')
+          document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" ' +	mediumTpath + ' <text class ="mtxt3" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ</textPath></svg>')
           //l
-          document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,394a394,394 0 1,0 788,0a394,394 0 1,0 -788,0"/><text class ="ltxt3" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ</textPath></svg>')
+          document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + largeTpath + ' <text class ="ltxt3" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ УЖЕ ЛУЧШЕ</textPath></svg>')
           upd = 3
 				}
 		}
     else  if (window.scrollY > window.innerHeight * 13 && window.scrollY < window.innerHeight * 20)  {
       if (upd !=4) {
           //s
-          document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" width="428" height="428" viewBox="0 0 428 428" fill="none" xmlns="http://www.w3.org/2000/svg"> <path id="st0" d="M0,214a214,214 0 1,0 428,0a214,214 0 1,0 -428,0"/><text class ="stxt4" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ПРЕКРАСНО ПРЕКРАСНО</textPath></svg>')
+          document.getElementById('stext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + smallTpath + ' <text class ="stxt4" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st0" fill="white">ПРЕКРАСНО ПРЕКРАСНО</textPath></svg>')
           //m
-          document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st1" d="M0,310a310,310 0 1,0 620,0a310,310 0 1,0 -620,0"/><text class ="mtxt4" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">ПРЕКРАСНО ПРЕКРАСНО ПРЕКРАСНО</textPath></svg>')
+          document.getElementById('mtext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + mediumTpath + '<text class ="mtxt4" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st1" fill="white">ПРЕКРАСНО ПРЕКРАСНО ПРЕКРАСНО</textPath></svg>')
           //l
-          document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" width="788" height="788" viewBox="0 0 788 788" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="st2" d="M0,394a394,394 0 1,0 788,0a394,394 0 1,0 -788,0"/><text class ="ltxt4" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">ПРЕКРАСНО ПРЕКРАСНО ПРЕКРАСНО</textPath></svg>')
+          document.getElementById('ltext').innerHTML=('<svg class="badtxt cfix fadeanim" ' + largeTpath + ' <text class ="ltxt4" width="500" fill="#fff"><textPath alignment-baseline="top" xlink:href="#st2" fill="white">ПРЕКРАСНО ПРЕКРАСНО ПРЕКРАСНО</textPath></svg>')
           upd = 4
         }
     }
