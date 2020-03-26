@@ -36,7 +36,7 @@ body {
 
 
 #ii{
-  pointer-events: all;
+  pointer-events: none;
   position:fixed;
   width:100vw;
   height: 100vh;
@@ -52,10 +52,8 @@ body {
 }
 
 .darkwave {
-  display: flex;
-  justify-content: center;
   will-change: transform;
-  pointer-events: none;
+pointer-events: none;
   transform: translateY(+54%);
   position: fixed;
   width: 100vw;
@@ -183,32 +181,9 @@ letter-spacing: 60px;
   height: 100vh;
   background-color: #fff;
 }
-.fadeanim {
-  -webkit-animation: fadein 2s;
-        animation: fadein 2s;
-}
 
 .logo {
   transform: scale(1.5,1.5)
-}
-
-#link1 {
-  position: absolute;
-  margin-top: 350vh;
-}
-
-#link2 {
-  position: absolute;
-  margin-top: 801vh;
-}
-
-#link3 {
-  position: absolute;
-  margin-top: 1310vh;
-}
-#link4 {
-  position: absolute;
-  margin-top: 2000vh;
 }
 
 #particles {
@@ -265,11 +240,4 @@ letter-spacing: 60px;
  100% {
    margin-left: 200px;
  }
-}
-
-
-
-@keyframes fadein {
-    from { opacity: 0;}
-    to   { opacity: 1;}
 }
