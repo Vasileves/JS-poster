@@ -1,4 +1,5 @@
-
+$(".logo").fadeOut();
+$(".bgend").fadeOut();
 window.onload = function() {
 	lax.setup({
 	    breakpoints: { small: 0, large: 1367 }
@@ -249,7 +250,7 @@ jQuery(function( $ ){
     $(window).scroll(function() {
         var yPos = ( $(window).scrollTop() );
 
-        if(yPos > window.innerHeight * 14) { // Show element after this amount of scrolled down pixels
+        if(yPos > window.innerHeight * 16) { // Show element after this amount of scrolled down pixels
 
 			$(".bgend").fadeIn();
 		} else {
@@ -262,7 +263,7 @@ jQuery(function( $ ){
     $(window).scroll(function() {
         var yPos = ( $(window).scrollTop() );
 
-        if(yPos > window.innerHeight * 15) { // Show element after this amount of scrolled down pixels
+        if(yPos > window.innerHeight * 17) { // Show element after this amount of scrolled down pixels
 
 			$(".logo").fadeIn();
 		} else {
