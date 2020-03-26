@@ -43,20 +43,21 @@ body {
   -webkit-mask: url(https://vasileves.github.io/JS-poster/res/boshka.svg);
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 200px;
+  -webkit-mask-size: 22vh;
   mask: url(https://vasileves.github.io/JS-poster/res/boshka.svg);
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-size: 200px;
+  mask-size: 22vh;
   background-color: #fff;
 }
+
 
 .darkwave {
   display: flex;
   justify-content: center;
   will-change: transform;
   pointer-events: none;
-  transform: translateY(+54%);
+  transform: translateY(+50%);
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -76,6 +77,24 @@ body {
   display: flex;
   align-items: center;
   animation: wlight 2s linear infinite;
+}
+
+@media screen and (max-height: 890px) {
+.darkwave {
+  transform: translateY(+57%);
+}
+.lighwave {
+    transform: translateY(+48%);
+  }
+}
+
+@media screen and (max-height: 768px) {
+.darkwave {
+  transform: translateY(+73%);
+}
+.lighwave {
+    transform: translateY(+73%);
+  }
 }
 
 .stxt1 {

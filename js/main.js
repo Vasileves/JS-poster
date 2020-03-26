@@ -1,6 +1,7 @@
+
 window.onload = function() {
 	lax.setup({
-		breakpoints: { small: 0, large: 1366 }
+	    breakpoints: { small: 0, large: 1367 }
 	})
 
 	const updateLax = () => {
@@ -128,8 +129,6 @@ const partconf =
 }
 
 
-
-particlesJS('particles', partconf)
 
 
 
