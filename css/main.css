@@ -11,6 +11,7 @@ body {
   background: linear-gradient(180deg, black 0%, #002876 25%, #0038FF 50%, #80B2FC 75%, #d9e6fb 100%);
 }
 
+
 .badtxt {
   display: block;
   position: absolute;
@@ -209,6 +210,8 @@ letter-spacing: 60px;
 
 .logo {
   transform: scale(1.5,1.5)
+  -webkit-animation: blur 1s;
+        animation: blur 1s;
 }
 
 #link1 {
@@ -235,36 +238,13 @@ letter-spacing: 60px;
   width: 100vw;
   height: 100vh;
 }
-/*
- @keyframes txt1 {
-	75% {
-		opacity: 50;
-	}
 
-	100% {
-		opacity: 100;
-	}
+@keyframes blur {
+  0% { -webkit-filter: blur(200px);}
+  100% { -webkit-filter: blur(0px);}
 }
 
-@keyframes txt2 {
-	50% {
-		opacity: 50;
-	}
 
-	75% {
-		opacity: 100;
-	}
-}
-
-@keyframes txt3 {
-	25% {
-		opacity: 50;
-	}
-
-	50% {
-		opacity: 100;
-	}
-} */
 
 @keyframes wlight {
  0% {

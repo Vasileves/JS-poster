@@ -241,3 +241,32 @@ $("#ii").click(function() {
   		}
 
 });
+
+
+// SHOW BGEND
+
+jQuery(function( $ ){
+    $(window).scroll(function() {
+        var yPos = ( $(window).scrollTop() );
+
+        if(yPos > window.innerHeight * 14) { // Show element after this amount of scrolled down pixels
+
+			$(".bgend").fadeIn();
+		} else {
+			$(".bgend").fadeOut();
+		}
+	});
+});
+
+jQuery(function( $ ){
+    $(window).scroll(function() {
+        var yPos = ( $(window).scrollTop() );
+
+        if(yPos > window.innerHeight * 15) { // Show element after this amount of scrolled down pixels
+
+			$(".logo").fadeIn();
+		} else {
+			$(".logo").fadeOut();
+		}
+	});
+});
